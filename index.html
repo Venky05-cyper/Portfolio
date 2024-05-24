@@ -580,7 +580,7 @@
       <h1>Projects</h1>
       <p id="para5">// Check out some of my recent work</p>
       <div class="sec4_1">
-        <div class="div2">
+        <div class="div2" id="project1">
           <p id="para3">Crafting and Design Showcase Website</p>
           <p id="para4">A crafting and design showcase website built with HTML, CSS, and JavaScript, where users can display, and find inspiration for creative projects.</p>
           <img src="github (1).png" alt="img error">
@@ -644,6 +644,9 @@
       var email = document.getElementById('inp2').value;
     });
 
+    document.querySelector("#project1").addEventListener('click',function (){
+      window.open(/portfolio-f37z.vercel.app/)
+    })
 
     
 
