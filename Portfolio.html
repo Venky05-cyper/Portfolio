@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        width: 100%;
+        /* border: 1px solid; */
+        background-color: rgb(10, 25, 47);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+        z-index: 10;
+      }
+      
+      nav img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+      nav ul li {
+        margin: 0px 10px;
+        font-size: 17px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li:hover {
+        font-size: 16.6px;
+        text-decoration: underline rgb(29, 133, 219);
+      }
+
+      #section1 {
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(10, 25, 47);
+        color: white;
+        font-family: sans-serif;
+        position: relative;
+      }
+      #section1 button{
+        padding: 15px 25px;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 16px;
+      }
+      #section1 button:hover{
+        background-color: rgb(29, 133, 219);
+        border: none;
+      }
+      #section1 button i{
+        margin-left: 10px;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 16px;
+        margin-top: 5px;
+        
+      }
+      #section1 button a{
+        text-decoration: none;
+        color: white;
+        margin-left: 10px;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 18px;
+        margin-top: 5px;
+      }
+      #section1 button:hover i{
+        animation: sec1but1 0s ease-in-out forwards;
+      }
+        
+      @keyframes sec1but1 {
+        /* from{transform: rotate(0deg)} */
+        to{transform: rotate(88deg)}
+      }
+      #section1 div {
+        width: 70%;
+        height: 300px;
+        /* border: 1px solid; */
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        animation: anim1 1s ease forwards;
+      }
+
+      @keyframes anim1{
+          from{
+            opacity: 0;
+            transform: translateY(-500px);
+          /* transform: rotate(50px) ; */
+          }
+          to{
+            opacity: 1;
+            transform: translateY(0px);
+          }
+      }
+      #section1 div span {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 16px;
+        color: rgb(29, 133, 219);
+      }
+      #section1 div h2 {
+        font-size: 72px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(146, 211, 225);
+      }
+
+      #section1 div p {
+        width: 65%;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        color: rgba(102, 173, 231, 0.705);
+        font-weight: 300;
+        margin: 10px 0px;
+        margin-bottom: 20px;
+      }
+      #section2 {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(10, 25, 47);
+        position: relative;
+        color: white;
+        padding-top: 50px;
+      }
+
+      @keyframes anim2{
+        from{
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+        to{
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      
+      #section2 div {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+      }
+      #section2 div #para1 {
+        width: 480px;
+        height: 170px;
+        margin-right: 50px;
+        margin-left: 270px;
+        font-size: 28px;
+        text-align: right;
+        margin-top: -8px;
+        animation: anim2 1s ease forwards;
+      }
+      #section2 div #para2 {
+        width: 500px;
+        height: 50px;
+        font-size: 15px;
+        animation: anim2 1s ease forwards;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 200;
+      }
+      #section2 h1 {
+        position: absolute;
+        left: 47%;
+        top: 38%;
+        font-size: 38px;
+        color: rgb(146, 211, 225);
+        animation: anim2 1s ease forwards;
+      }
+      #section2 h1::before {
+        content: "";
+        height: 4px;
+        width: 100%;
+        background:  rgb(29, 133, 219);
+        position: absolute;
+        left: 0%;
+        top: 99%;
+       border-radius: 5px;
+      }
+      .scroll{
+        position: fixed;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+      }
+      #section3{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(10, 25, 47);
+        position: relative;
+        color: white;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+       padding-top: 150px;
+      }
+      #section3 h1{
+        text-align: center;
+        margin-left: -750px;
+        font-size: 38px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(146, 211, 225)
+      }
+      #section3 h1::before{
+        content: "";
+        width: 55%;
+        height: 5px;
+        background: rgb(29, 133, 219);
+        position: absolute;
+        top: 28.5%;
+        left: 22.5%;
+      }
+      #section3 div{
+        width: 60%;
+        height: 450px;
+        display: inline-block;
+        flex-direction: column;
+        margin-top: 30px;
+        /* border: 1px solid green; */
+      }
+      #section3 div .div1{
+         width: 250px;
+         height: 180px;
+         /* border: 1px solid; */
+         display: inline-block;
+         justify-content: center;
+        align-items: center;
+        margin: 10px 20px;
+        box-shadow: #040c16 0px 13px 27px -5px, #040c16 0px 8px 16px -8px;
+      }
+     
+      #section3 div .div1 img{
+         width: 100px;
+         height: 100px;
+         /* border: 1px solid red; */
+         margin-top: 20px;
+      }
+      #section3 div .div1 p{
+        font-size: 18px;
+        margin-top: 5px;
+      }
+      #section4{
+        width: 100%;
+        height: 120vh;
+        background-color: rgb(10, 25, 47);
+        position: relative;
+        color: white;
+        padding-top: 120px;
+      }
+      #section4 h1{
+        font-size: 38px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        margin-left: 290px;
+        color: rgb(146, 211, 225);
+        margin-bottom: 30px;
+      }
+      #section4 h1::before{
+        content: "";
+        width: 61.8%;
+        height: 5px;
+        background: rgb(29, 133, 219);
+        position: absolute;
+        top: 20.5%;
+        left: 19.2%;
+      }
+      #section4 .div2{
+        width: 450px;
+        height: 200px;
+        padding: 0px 15px;
+        padding-top: 14px;
+        background-color: rgb(18,38,68);
+        border-radius: 10px;
+        margin: 20px 20px;
+        display: inline-block;
+      }
+      #section4 .div2 #para3{
+        font-size: 22px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      #section4 .div2 #para4{
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        margin-bottom: 30px;
+      }
+      #section4 .div2 img{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+      #section4 .div2 #img2{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+      }
+      #section4 .div2 span{
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 200;
+      }
+      #section4 #para5{
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        margin-left: 300px;
+        margin-bottom: 30px;
+      }
+      .sec4_1{
+        width: 68%;
+        height: 500px;
+        /* border: 1px solid; */
+        display: inline-block;
+        flex-direction: column;
+        margin-left: 270px;
+      }
+      #section5{
+        width: 100%;
+        height: 140vh;
+        background-color: rgb(10, 25, 47);
+        position: relative;
+        color: white;
+        padding-top: 120px;
+      }
+      #section5 h1{
+        font-size: 38px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        margin-left: 290px;
+        color: rgb(146, 211, 225);
+        margin-bottom: 30px;
+      }
+      #section5 h1::before{
+        content: "";
+        width: 61.8%;
+        height: 5px;
+        background: rgb(29, 133, 219);
+        position: absolute;
+        top: 20.5%;
+        left: 19.2%;
+      }
+      #section5 #sec5_1{
+        width: 50%;
+        display: flex;
+        /* border: 1px solid; */
+        margin-left: 450px;
+        margin-top: 65px;
+      }
+      #sec5_1 #div1 a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+      }
+      #section5 #sec5_1 #div1:hover a{
+        color: white;
+      }
+
+      #section5 #sec5_1 #div1{
+         /* border: 1px solid; */
+         padding:10px 2px;
+         margin: 0px 10px;
+         border-radius: 3px;
+         cursor: pointer;
+         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      }
+      #section5 #sec5_1 #div1 a{
+        padding: 10px 20px;        
+      }
+      
+      /* #section5 #sec5_1 #div1 a:hover{
+        
+      } */
+      
+      #section5 #sec5_1 .div1{
+        background-color: rgb(37,99,235);
+        color: black;
+      }
+      #section5 #sec5_1 .div2{
+        background-color: rgb(59,130,246);
+        color: black;
+      }
+      #section5 #sec5_1 .div3{
+        background-color: rgb(111,194,176);
+        color: black;
+      }
+      #section5 #sec5_1 .div4{
+        background-color: rgb(86,95,105);
+        color: black;
+      }
+      #section5 #sec5_1 #div1 i{
+        font-size: 22px;
+      }
+      #section5 #para6{
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        margin-left: 450px;
+        margin-top: 30px;
+        margin-bottom: 90px;
+      }
+      #section5 #sec5_2{
+         width: 40%;
+         height: 50%;
+         /* border: 1px solid; */
+         margin-left: 450px;
+      }
+      #section5 #sec5_2 div input{
+        width: 100%;
+        height: 35px;
+        padding: 5px 10px;
+        margin-bottom: 20px;
+        background-color: rgb(204,214,246);
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+      }
+      #section5 #sec5_2 textarea{
+        width: 100%;
+        height: 300px;
+        padding: 5px;
+        background-color: rgb(204,214,246);
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+      }
+      ::placeholder{
+        color: darkgray;
+      }
+      #section5 button{
+        width: 40%;
+        padding: 15px 25px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        font-size: 17px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        margin-left: 450px;
+        font-weight: 300;
+        margin-top: -5px;
+      }
+      #section5 button:hover{
+        background: rgb(29, 133, 219);
+        border: none;
+        cursor: pointer;
+      }
+      footer{
+        background-color: rgb(31,41,55);
+        color: white;
+        text-align: center;
+        padding: 20px 10px;
+      }
+      footer p{
+        font-size: 17px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 200;
+      }
+      footer p .fa-heart{
+        color: red;
+        border: none;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <img src="man (1).png" alt="img error" />
+      <ul>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#section3">Skill</a></li>
+        <li><a href="#section4">Projects</a></li>
+        <li><a href="#section5">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="section1">
+      <div>
+        <span>Hi, my name is</span>
+        <h2 id="h4_1">Vyankatesh Etkal</h2>
+        <h2 id="h4_2">I'm a Full stack developer.</h2>
+        <p>
+          a passionate web developer with a strong foundation in HTML, CSS, and
+          JavaScript. With a keen eye for detail and a love for clean, elegant
+          design, I strive to create user-friendly and visually appealing
+          websites.
+        </p>
+        <button id="sec1but"><a href="#section4">View More <i class="fa fa-long-arrow-right" aria-hidden="true" id="icon1"></i></a></button>
+      </div>
+    </section>
+    <section id="section2">
+      <h1>About</h1>
+      <div>
+        <p id="para1">
+          Hi there! I'm Vyankatesh,I invite you to explore my portfolio and
+          discover the projects I've worked on.
+        </p>
+        <p id="para2">
+          My journey in web development began with a fascination for crafting
+          digital experiences that resonate with users. Over time, I've honed my
+          skills in HTML, CSS, and JavaScript, mastering the art of turning
+          ideas into interactive web applications.
+        </p>
+      </div>
+    </section>
+    <section id="section3">
+          <h1>Skills</h1>
+           <div>
+                <div class="div1">
+                  <img src="html.png" alt="img error">
+                  <p>HTML</p>
+                </div>
+                <div class="div1">
+                  <img src="css3.png" alt="img error">
+                  <p>CSS</p>
+                </div>
+                <div class="div1">
+                  <img src="javascript.png" alt="img error">
+                  <p>Javascript</p>
+                </div>
+                <div class="div1">
+                  <img src="github.png" alt="img error">
+                  <p>github</p>
+                </div>
+                <div class="div1">
+                  <img src="nodejs.png" alt="img error">
+                  <p>Node-Js</p>
+                </div>
+                <div class="div1">
+                  <img src="mongodb.png" alt="img error">
+                  <p>Mongo-Db</p>
+                </div>
+           </div>
+    </section>
+    <section id="section4">
+      <h1>Projects</h1>
+      <p id="para5">// Check out some of my recent work</p>
+      <div class="sec4_1">
+        <div class="div2">
+          <p id="para3">Crafting and Design Showcase Website</p>
+          <p id="para4">A crafting and design showcase website built with HTML, CSS, and JavaScript, where users can display, and find inspiration for creative projects.</p>
+          <img src="github (1).png" alt="img error">
+          <img src="new-tab.png" alt="img error" id="img2">
+        </div>
+        <div class="div2">
+          <p id="para3">Form Crafter</p>
+          <p id="para4">A Form Crafter website built with HTML, CSS, and JavaScript, enabling users to design, customize, and share various forms easily.</p>
+          <img src="github (1).png" alt="img error">
+          <img src="new-tab.png" alt="img error" id="img2">
+        </div>
+        <div class="div2">
+          <p id="para3">Crafting and Design Showcase Website</p>
+          <p id="para4">A crafting and design showcase website built with HTML, CSS, and JavaScript, where users can display, and find inspiration for creative projects.</p>
+          <img src="github (1).png" alt="img error">
+          <img src="new-tab.png" alt="img error" id="img2">
+        </div>
+        <div class="div2">
+          <p id="para3">Crafting and Design Showcase Website</p>
+          <p id="para4">A crafting and design showcase website built with HTML, CSS, and JavaScript, where users can display, and find inspiration for creative projects.</p>
+          <img src="github (1).png" alt="img error">
+          <img src="new-tab.png" alt="img error" id="img2">
+        </div>
+      </div>
+    </section>
+    <section id="section5">
+      <h1>Contact</h1>
+      <div id="sec5_1">
+        <div id="div1" class="div1"><a href="https://www.linkedin.com/in/vyankatesh-etkal-458656224"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></div>
+        <div id="div1" class="div2"><a href="https://github.com/Venky05-cyper"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+        <div id="div1" class="div3"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
+        <div id="div1" class="div4"><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></div>
+      </div>
+      <p id="para6">// Submit the form below or shoot me an email - venky8kal05@gmail.com</p>
+      <div id="sec5_2">
+        <div><input type="text" id="inp1" placeholder="Name" required></div>
+        <div><input type="email" id="inp2" placeholder="Email" required></div>
+        <div><textarea name="text" id="inp3" placeholder="Message" required></textarea></div>
+      </div>
+      <button id="but1">Let's Collaborate</button>
+    </section>
+    <footer>
+      <p>Made with  <i class="fa fa-heart" aria-hidden="true"></i>  by Vyankatesh Etkal. <i class="fa fa-copyright" aria-hidden="true"></i> All Rights Reserved</p>
+    </footer>
+  </body>
+  <script>
+    window.onscroll = function (){
+      var nav = document.getElementById("nav");
+    var distance = document.documentElement.scrollTop;
+    if(distance >=400){
+      nav.classList.add('scroll');
+    }else{
+      nav.classList.remove('scroll');
+    }
+
+    }
+
+
+    document.querySelector('#but1').addEventListener('click',function () {
+      var name = document.getElementById('inp1').value;
+      var email = document.getElementById('inp2').value;
+    });
+
+
+    
+
+   
+
+      
+  </script>
+</html>
